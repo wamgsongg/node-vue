@@ -88,7 +88,7 @@ module.exports = app => {
 
         // }
         const isValid = require('bcrypt').compareSync(password,user.password)
-       
+        
         httpAssert(isValid,422,'密码错误')
        
         //token生成
